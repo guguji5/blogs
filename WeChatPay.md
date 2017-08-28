@@ -94,7 +94,7 @@ https://api.mch.weixin.qq.com/pay/unifiedorder
 - 至此，微信支付应该能成功调起。
 - 
 <div align=center>
-![demo](http://ww1.sinaimg.cn/large/7ec3646fgy1fizfr7ybcij20f00qodg9.jpg)
+<img src='http://ww1.sinaimg.cn/large/7ec3646fgy1fizfr7ybcij20f00qodg9.jpg' width=350>
 </div>
 
 四、微信支付成功以后，微信服务器调用notify_url
@@ -130,6 +130,6 @@ https://api.mch.weixin.qq.com/pay/unifiedorder
 
 
 <div align=center>
-![欢迎关注](http://ww1.sinaimg.cn/large/7ec3646fgy1fizfp0nxrcj2076076q3e.jpg)
+<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fizfp0nxrcj2076076q3e.jpg'>
 </div>
 
