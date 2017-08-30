@@ -12,13 +12,13 @@
 4. code split。
 
 <div align=center>
-<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kf77vfzj211v0jhwha.jpg'>
+<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kf77vfzj211v0jhwha.jpg' width =80%>
 </div>
 
    从webpack的analysis中可以看出，资源文件打包成两个包。vendor较大，230k左右，app很小几十K。手机端浏览器大部分会同时拉取4个资源，根据木桶原理，最终完毕时间肯定由最慢的一个资源决定。所以将mint-ui的内容从vendor中转移到app中，两个大小都在150k左右。
 
 <div align=center>
-<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kpdm5djj21130hq0v1.jpg'>
+<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kpdm5djj21130hq0v1.jpg' width=80%>
 </div>
 
 ### node后台的优化
