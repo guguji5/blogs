@@ -14,18 +14,22 @@
     <img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kf77vfzj211v0jhwha.jpg'>
 </div>
    从webpack的analysis中可以看出，资源文件打包成两个包。vendor较大，230k左右，app很小几十K。手机端浏览器大部分会同时拉取4个资源，根据木桶原理，最终完毕时间肯定由最慢的一个资源决定。所以将mint-ui的内容从vendor中转移到app中，两个大小都在150k左右。
- <div align='center'>
+ <div align=center>
     <img src = 'http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kpdm5djj21130hq0v1.jpg'>
 </div>
 <div align=center>
 <img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fizfp0nxrcj2076076q3e.jpg'>
 </div>
+
 ### node后台的优化
+
 1. 设置一个设置favicon.ico，不然每次都返回404。
 2. 后台开启gzip超级有效，大概压缩率打到75%，从上边code split中可以看出159k的可以直接压缩成54k传过来。（有关gzip还专门翻译了一篇文章：[how to optimieze your site with gzip](https://github.com/guguji5/blogs/blob/master/how%20to%20optimieze%20your%20site%20with%20gzip.md)）
 3. 占据渲染时间大半壁江山的都是图片，图片缓存很重要，从新浪图床上下载下来的，新浪服务器缓存的很好。少量从我服务器上的图通过IF-Modified-since/last-modified last-modified和if-none-match/etags来设置好缓存。未过期的值或者未变化的值浏览器端直接读取缓存。
 ![设置过期时间](http://ww1.sinaimg.cn/large/7ec3646fgy1fj1lfdimitj20ja03wdft.jpg)
+
 ### 数据库和微信（菜鸟备忘）
+
 1. 指定需要返回的键
 
     db.users.find({},{"username":1,"email":1})   比db.users.find() 然后再解析数据肯定是要快。
