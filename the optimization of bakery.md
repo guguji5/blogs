@@ -1,4 +1,4 @@
-## bakery性能优化
+<h2 align='center'>性能优化</h2>
 
 香满苑蛋糕屋的微信站bakery运行在了亚马逊云（1G内存+1核+8G硬盘），俄亥俄洲的主机上，平均有300ms的延迟，因为是试运行所以暂时也没有换的打算。在“时间就是金钱的”21世纪，性能优化就显得更为重要，主页load时间过长会让用户失去耐心，前端后台以及mongodb数据库的优化变得不可或缺。
 
@@ -17,7 +17,9 @@
  <div align='center'>
     <img src = 'http://ww1.sinaimg.cn/large/7ec3646fgy1fj1kpdm5djj21130hq0v1.jpg'>
 </div>
-
+<div align=center>
+<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fizfp0nxrcj2076076q3e.jpg'>
+</div>
 ### node后台的优化
 1. 设置一个设置favicon.ico，不然每次都返回404。
 2. 后台开启gzip超级有效，大概压缩率打到75%，从上边code split中可以看出159k的可以直接压缩成54k传过来。（有关gzip还专门翻译了一篇文章：[how to optimieze your site with gzip](https://github.com/guguji5/blogs/blob/master/how%20to%20optimieze%20your%20site%20with%20gzip.md)）
