@@ -131,6 +131,6 @@ https://api.mch.weixin.qq.com/pay/unifiedorder
 
 
 <div align=center>
-<img src ='http://ww1.sinaimg.cn/large/7ec3646fgy1fizfp0nxrcj2076076q3e.jpg'>
+<img src ='imgs/qrcode.png'>
 </div>
 
