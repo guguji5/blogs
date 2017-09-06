@@ -10,6 +10,7 @@
 2. 小图标的合并，css雪碧图的使用，减少请求次数。
 3. 大量图片（包括雪碧图）从服务器拉取比较慢，上传到新浪微博的图床。
 4. code split。
+5. webpack热重载慢，webpack2升级到webpack3速度提高10倍；开发过程中就用普通路由，懒加载路由在webpack中会使cache失效。
 
 <div align=center>
 <img src ='imgs/clipboard2.png'>
